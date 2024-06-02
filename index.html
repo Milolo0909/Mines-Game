@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mines Game</title>
+    <link rel="icon" type="image/x-icon" href="/img/mine.svg" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="balance">Balance: 100.00</div>
+    <div class="container">
+      <div class="manual">
+        <div class="amount">
+          <div class="amount-title">Bet amount</div>
+          <div class="amount-input-wrapper">
+            <input type="number" class="amount-input" />
+            <div class="amount-buttons buttons">
+              <button class="amount-button button">1/2</button>
+              <button class="amount-button button">2x</button>
+              <button class="amount-button button">Max</button>
+            </div>
+          </div>
+        </div>
+        <div class="mines">
+          <div class="mines-title">Mines</div>
+          <div class="mines-input-wrapper">
+            <input type="number" class="mines-input" />
+            <div class="mines-buttons buttons">
+              <button class="mines-button button">1</button>
+              <button class="mines-button button">3</button>
+              <button class="mines-button button">5</button>
+              <button class="mines-button button">10</button>
+              <button class="mines-button button">15</button>
+              <button class="mines-button button">20</button>
+            </div>
+          </div>
+        </div>
+        <div class="earnings">
+          <div class="earnings-title">Total earnings</div>
+          <input type="number" class="earnings-input" disabled />
+        </div>
+        <button class="start-button">Start new game</button>
+      </div>
+
+      <div class="game close">Start the game!</div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
